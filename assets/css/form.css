@@ -1,0 +1,16 @@
+#form_process_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#form_process_button i {
+    /* Add your desired styles to mimic the appearance of the icon */
+    /* For example, font-size, color, etc. */
+    font-size: 16px; /* Adjust the size as needed */
+    color: #000; /* Adjust the color as needed */
+}
+
+.contentFixed .contact-screen #CareerOne p {
+    color: aliceblue;
+}
