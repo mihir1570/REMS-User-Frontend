@@ -32,7 +32,7 @@ const insertData = async () => {
         const status = "initiated"
 
 
-        const datas = await fetch("http://localhost:4500/addInquiries", {
+        const datas = await fetch("https://admin-backend-kd9a.onrender.com/addInquiries", {
             method: "POST",
             body: JSON.stringify({ name, email, phone, interest, day, month, year, status }),
             headers: {
@@ -89,7 +89,7 @@ const insertData2 = async () => {
         const status = "initiated"
 
 
-        const datas = await fetch("http://localhost:4500/addGetintouchs", {
+        const datas = await fetch("https://admin-backend-kd9a.onrender.com/addGetintouchs", {
             method: "POST",
             body: JSON.stringify({ name, phone, email, message, day, month, year, status }),
             headers: {
@@ -145,7 +145,7 @@ const insertData5 = async () => {
         const status = "initiated"
 
 
-        const datas = await fetch("http://localhost:4500/addCpartners", {
+        const datas = await fetch("https://admin-backend-kd9a.onrender.com/addCpartners", {
             method: "POST",
             body: JSON.stringify({ name, email, phone, companyname, message, day, month, year, status }),
             headers: {
@@ -204,7 +204,7 @@ const insertData6 = async () => {
         const year = date.getFullYear()
         const status = "initiated"
 
-        const datas = await fetch("http://localhost:4500/addContacts", {
+        const datas = await fetch("https://admin-backend-kd9a.onrender.com/addContacts", {
             method: "POST",
             body: JSON.stringify({ name, email, phone, select, message, day, month, year, status }),
             headers: {
@@ -254,7 +254,7 @@ const insertData23 = async (e) => {
         showAlert23("Please select the position you wish to apply.");
     } else {
         const response = await fetch(
-            // "http://localhost:4500/addTeam",
+            // "https://admin-backend-kd9a.onrender.com/addTeam",
             `https://admin-backend-kd9a.onrender.com/addTeam`,
             {
                 method: "POST",
